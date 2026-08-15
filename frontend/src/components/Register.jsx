@@ -19,7 +19,7 @@ function Register(){
         setLoading(true);
 
         try{
-            await axios.post("https://todo-backend-ocq4.onrender.com/api/auth/register",{ name:name, email:email, password:password})
+            await axios.post("https://todo-dashboard-backend-qhcu.onrender.com/api/auth/register",{ name:name, email:email, password:password})
 
             alert("Registartion Successful");
             navigate("/login");
