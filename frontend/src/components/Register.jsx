@@ -24,14 +24,14 @@ function Register(){
             alert("Registartion Successful");
             navigate("/login");
         }catch(error){
-            setError(error.respond?.data?.message || "Registeration failed");
+            setError(error.response?.data?.message || "Registeration failed");
         }finally{
             setLoading(false);
         }
     };
 
     return (
-        <div clasName="auth-container">
+        <div className="auth-container">
             <div className ="auth-box">
                 <h1> Create Account</h1>
                 <form onSubmit={submitData}>
