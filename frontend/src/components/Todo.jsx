@@ -232,8 +232,8 @@ function Todo() {
 
             {/* Todo list */}
             {!loading && todos.length > 0 && (
-                <div>
-                    {todos.map((todo) => (
+    <div className="todo-list">
+        {todos.map((todo) => (
                         <div
                             className="todo-item"
                             key={todo._id}
